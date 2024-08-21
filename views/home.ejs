@@ -1,0 +1,80 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mauri <span>Search</span></h1>
+    <form action="/search" method="POST">
+        <input type="number" name="number" placeholder="Enter Bac Number" required>
+        <button type="submit">Search</button>
+    </form>
+    <% sortmajor1.forEach((student,rank) => { %>
+        
+        <div class="contain" id="contain1"> 
+            <div class="tete">
+                <b> 
+                  </p><%= student.Serie_FR %></b></div>
+                
+            
+            <div>  <p><%= rank +1  %>
+            <p><%=  student.Nom_FR %></p>
+            <b><%= parseFloat(student.Moy_Bac).toFixed(2) %></b></div>
+         <hr>
+        </div>
+          <% }) %>
+          
+    <% sortmajor2.forEach((student,rank) => { %>
+        
+        <div class="contain" id="contain2"> 
+            <div class="tete">
+                <b> 
+                  </p><%= student.Serie_FR %></b></div>
+                
+            
+            <div>  <p><%= rank +1  %>
+            <p><%=  student.Nom_FR %></p>
+            <b><%= parseFloat(student.Moy_Bac).toFixed(2) %></b></div>
+         <hr>
+        </div>
+          <% }) %>
+          
+    <% sortmajor3.forEach((student,rank) => { %>
+        
+        <div class="contain" id="contain3"> 
+            <div class="tete">
+                <b> 
+                  </p><%= student.Serie_FR %></b></div>
+                
+            
+            <div>  <p><%= rank +1  %>
+            <p><%=  student.Nom_FR %></p>
+            <b><%= parseFloat(student.Moy_Bac).toFixed(2) %></b></div>
+         <hr>
+        </div>
+          <% }) %>
+          
+    <% sortmajor4.forEach((student,rank) => { %>
+        
+        <div class="contain" id="contain4"> 
+            <div class="tete">
+                <b> 
+                  </p><%= student.Serie_FR %></b></div>
+                
+            
+            <div>  <p><%= rank +1  %>
+            <p><%=  student.Nom_FR %></p>
+            <b><%= parseFloat(student.Moy_Bac).toFixed(2) %></b></div>
+         <hr>
+        </div>
+          <% }) %>
+
+
+   <footer>tous droits reserves Mauri search © 2024</footer>
+ 
+  
+</body>
+</html>
